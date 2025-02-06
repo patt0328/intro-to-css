@@ -21,3 +21,7 @@ article > img {width: 150px;
     border-radius: 50%;
     filter: grayscale(100%);
     margin-top: 1em;}
+ol li:nth-child(2n) {color: #dc33dc;
+}
+main > img {width: 100%;
+}
