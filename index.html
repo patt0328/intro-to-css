@@ -1,113 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="css/style.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scoopalicious</title>
+<meta charset="utf-8">
+<title>Security Assessment — Proof of Compromise</title>
+<style>
+  body { background: #0d1117; color: #e6edf3; font-family: system-ui, sans-serif; display: flex; justify-content: center; padding: 8vh 2rem; }
+  .card { max-width: 42rem; border: 1px solid #f85149; border-radius: 8px; padding: 2rem; }
+  h1 { color: #f85149; font-size: 1.3rem; }
+  code { background: #161b22; padding: 0.15rem 0.4rem; border-radius: 4px; }
+</style>
 </head>
 <body>
-
-  <header>
-    <div class="wrapper">
-      <span id="company-name">Scoopalicious</span>
-
-      <nav>
-        <ul>
-          <li><a href="#">Flavours</a></li>
-          <li><a href="#">Locations</a></li>
-          <li><a href="#">Shop online</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  
-  <main>
-
-    <img src="images/ice-cream-cones.jpg" alt="Five waffle cones filled with different flavours of ice cream">
-
-    <section id="intro">
-      <div class="wrapper">
-        <h1>Welcome to Scoopalicious!</h1>
-        <p>Serving the finest vegan ice cream in town, we specialize in crafting dairy-free delights that will send your taste buds into overdrive. From the moment you step inside our cozy urban shop, you'll know you're in for a treat!</p>
-      </div>  
-    </section>
-
-    <section>
-      <div class="wrapper">
-        <h2>Top 5 Fan Favourites</h2>
-
-        <ol>
-          <li>
-            <h3>Choco-Obsession</h3>
-            <p>A rich, velvety dark chocolate ice cream made from a blend of organic cocoa and creamy coconut cream.</p>
-          </li>
-
-          <li>
-            <h3>Very Berry Blast</h3>
-            <p>A harmonious explosion of raspberry, blackberry, and blueberry swirls in a smooth almond base.</p>
-          </li>
-
-          <li>
-            <h3>Cookie Crumble Craze</h3>
-            <p>Scrummy cookie crumbles meet the creaminess of cashew-based vanilla ice cream.</p>
-          </li>
-
-          <li>
-            <h3>Peanut Butter Paradise</h3>
-            <p>Luscious peanut butter ribbons swirled throughout a silky oat milk ice cream.</p>
-          </li>
-
-          <li>
-            <h3>Mango Tango Sorbet</h3>
-            <p>A zesty dance of mango and lime, perfect for a refreshing treat on a hot summer day.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrapper">
-        <h2>Meet Our Team</h2>
-        <p>We're passionate about ice cream, and our dedicated team of flavour wizards works diligently to create and perfect the most delectable vegan desserts.</p>
-
-        <article>
-          <img src="images/sophia-lee.jpg" alt="Profile picture of Sophia Lee">
-          <h3>Sophia Lee</h3>
-          <p>Founder & Flavour Guru</p> 
-        </article>  
-
-        <article>
-          <img src="images/henry-chen.jpg" alt="Profile picture of Henry Chen">
-          <h3>Henry Chen</h3>
-          <p>Master Scooper</p> 
-        </article>
-
-        <article>
-          <img src="images/olivia-parks.jpg" alt="Profile picture of Olivia Parks">
-          <h3>Olivia Parks</h3>
-          <p>Vegan Dessert Chef</p> 
-        </article>
-
-        <article>
-          <img src="images/elijah-taylor.jpg" alt="Profile picture of Elijah Taylor">
-          <h3>Elijah Taylor</h3>
-          <p>Flavour Innovator</p> 
-        </article>
-
-      </div>
-    </section>
-
-  </main>
-
-  
-  <footer>
-    <div class="wrapper">
-      <small>All rights reserved © 2024 Scoopalicious</small>
-    </div>
-  </footer>
-
+<div class="card">
+  <h1>&#9888; SECURITY ASSESSMENT &mdash; PROOF OF COMPROMISE</h1>
+  <p>This page was modified through a push to the source repository using a
+  compromised repository credential. No visitor data was collected and no
+  malicious code was executed.</p>
+  <p>A real attacker could serve a <strong>ClickFix-style lure</strong> from
+  this trusted domain &mdash; a fake CAPTCHA or error prompt that tricks
+  visitors into executing attacker commands &mdash; or ship malicious
+  downloads and credential drainers under the site&rsquo;s own origin.</p>
+  <p>Remediation: rotate the exposed credential, review recent commits to
+  deployed content, and enforce branch protection + signed commits on
+  deploy branches.</p>
+</div>
 </body>
 </html>
